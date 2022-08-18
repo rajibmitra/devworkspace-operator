@@ -29,7 +29,7 @@ export PROJECT_CLONE_IMG ?= quay.io/devfile/project-clone:next
 export PULL_POLICY ?= Always
 export DEFAULT_ROUTING ?= basic
 export KUBECONFIG ?= ${HOME}/.kube/config
-export DEVWORKSPACE_API_VERSION ?= 32cae1f8e42c22035138ef6ee93080bc47d751c6
+export DEVWORKSPACE_API_VERSION ?= 85001ba03172e028fd6a0a4124ee6192de810716
 
 # Enable using Podman instead of Docker
 export DOCKER ?= docker
@@ -85,7 +85,7 @@ _print_vars:
 ##### Rules for dealing with devfile/api
 ### update_devworkspace_api: Updates the version of devworkspace crds in go.mod
 update_devworkspace_api:
-	go mod edit --require github.com/devfile/api/v2@$(DEVWORKSPACE_API_VERSION)
+	go mod edit --require github.com/rajibmitra/api/v2@$(DEVWORKSPACE_API_VERSION)
 	go mod download
 	go mod tidy
 

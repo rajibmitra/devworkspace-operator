@@ -47,7 +47,7 @@ echo "Downloading devfile/api CRDs to $TMP_DIR"
 
 cd "$TMP_DIR"
 git init
-git remote add origin https://github.com/devfile/api.git
+git remote add origin https://github.com/rajibmitra/api.git
 git config core.sparsecheckout true
 mkdir -p .git/info
 echo "crds/*" > .git/info/sparse-checkout

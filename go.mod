@@ -24,3 +24,5 @@ require (
 	sigs.k8s.io/controller-runtime v0.9.5
 	sigs.k8s.io/yaml v1.2.0
 )
+
+replace github.com/devfile/api/v2 => github.com/rajibmitra/api/v2 v2.2.0
